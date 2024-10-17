@@ -1,0 +1,662 @@
+date-time-format: "dd-MM-yyyy ss:mm:HH"
+
+shop-type-admin-regular: "Prodavnica za Admine"
+shop-type-selling: "Prodavnica za prodavanje"
+shop-type-buying: "Prodavnica za kupovinu"
+shop-type-trading: "Prodavnica za trade"
+shop-type-book: "Prodavnica za knjige"
+
+shop-type-desc-admin-regular: "ima beskonacno na raspolaganju"
+shop-type-desc-selling: "prodaje stvar igracu"
+shop-type-desc-buying: "kupuje stvar od igraca"
+shop-type-desc-trading: "traduje se sa igracem"
+shop-type-desc-book: "prodaje knjige"
+
+shop-object-type-living: "{type}"
+shop-object-type-sign: "Znak"
+shop-object-type-hanging-sign: "Viseci znak"
+shop-object-type-npc: "NPC"
+
+selected-shop-type: "&aIzabrana vrsta shopa: &6{type} &7({description})"
+selected-shop-object-type: "&aIzabrana vrsta objekta: &6{type}"
+
+creation-item-selected: |-
+  &a&l[ Kreacija prodavnice ]
+  &e  Nemoj gledati ni u kakav blok. Zatim
+  &5  Levi/Desni klik&e da izaberes vrstu shopa.
+  &5  Shift + levi/desni klik&e da izaberes vrstu objekta.
+  &5  Desni klik&e na kontejner da izaberes.
+  &e  Zatim &5desni klik&e na blok da postavis shopkeepera.
+
+state-enabled: "&aUkljuceno"
+state-disabled: "&4Iskljuceno"
+
+editor-title: "Shopkeeper Editor"
+
+button-previous-page: "&6<- Prethodna strana ({prev_page} / {max_page})"
+button-previous-page-lore: []
+button-next-page: "&6Sledeca strana ({next_page} / {max_page}) ->"
+button-next-page-lore: []
+button-current-page: "&6Strana {page} / {max_page}"
+button-current-page-lore: []
+
+button-name: "&aPostavi ime Shopu"
+button-name-lore:
+- "Dozvoljava da promenis ime"
+- "tvog shopkeepera"
+button-equipment: "&aOprema"
+button-equipment-lore:
+- "Daje opremu shopkeeperu"
+- "poput &earmora, glave i itema"
+button-move: "&aPomeri Shopkeepera"
+button-move-lore:
+- "Dozvoljava da menjas &elokaciju"
+- "tvog shopkeepera"
+button-container: "&aPogledaj Shop Inventory"
+button-container-lore:
+- "Dozvoljava da pristupis inventaru"
+- "koji koristi tvoj shopkeeper"
+button-trade-notifications: "&aTrade Notifikacije"
+button-trade-notifications-lore:
+- "Menja trade notifikacije"
+- "za ovog shopkeepera (on/off)."
+- "Trenutno: &5&l{state}"
+button-delete: "&4Izbrisi"
+button-delete-lore:
+- "&cBrise i zatvara"
+- "&covog shopkeepera"
+
+button-sign-variant: "&aIzaberi vrstu znaka"
+button-sign-variant-lore:
+- "Menja &etip drveta"
+button-sign-glowing-text: "&aPromeni svetleci tekst"
+button-sign-glowing-text-lore:
+- "Menja &eglow&r na tekst"
+button-baby: "&aPromeni variaciju bebe"
+button-baby-lore:
+- "Menja villagera u &ebebu"
+button-sitting: "&aPromeni poziciju sedenja"
+button-sitting-lore:
+- "Menja poziciju sedenja"
+button-cat-variant: "&aPromeni izgled macke"
+button-cat-variant-lore:
+- "Menja skin macke"
+button-rabbit-variant: "&aPromeni izgled zeca"
+button-rabbit-variant-lore:
+- "Menja skin zeca"
+button-collar-color: "&aIzaberi boju ogrlice"
+button-collar-color-lore:
+- "Promeni se boja"
+- "ogrlice moba"
+button-wolf-angry: "&aMenjaj ljutinu vuka"
+button-wolf-angry-lore:
+- "Pretvara vuka"
+- "u besnog ili ne"
+button-carrying-chest: "&aMenjaj mobov chest"
+button-carrying-chest-lore:
+- "Menja da li mob"
+- "drzi chest kod sebe"
+button-horse-color: "&aIzaberi boju konja"
+button-horse-color-lore:
+- "Menja boju konja"
+button-horse-style: "&aIzaberi stil konja"
+button-horse-style-lore:
+- "Menja skin konja."
+button-horse-saddle: "&aMenjaj sedlo konja"
+button-horse-saddle-lore:
+- "Menja da li ce konj"
+- "imati sedlo ili ne"
+button-horse-armor: "&aIzaberi oklop konja"
+button-horse-armor-lore:
+- "Menja armor konja"
+button-llama-variant: "&aIzaberi varijantu lame"
+button-llama-variant-lore:
+- "Menja izgled lame"
+button-llama-carpet-color: "&aIzaberi boju tepiha lame"
+button-llama-carpet-color-lore:
+- "Menja boju tepiha sa lame"
+button-creeper-charged: "&aMenjaj charged creepera"
+button-creeper-charged-lore:
+- "Menja stanje creepera"
+- "da li je charged ili ne"
+button-fox-variant: "&aIzaberi varijantu lisice"
+button-fox-variant-lore:
+- "Menja izgled lisice"
+button-fox-crouching: "&aMenjaj cucecu pozu"
+button-fox-crouching-lore:
+- "Menja cucecu pozu lisice"
+button-fox-sleeping: "&aMenjaj spavacu pozu"
+button-fox-sleeping-lore:
+- "Menja spavacu pozu lisice"
+button-mooshroom-variant: "&aIzaberi varijantu mooshrooma"
+button-mooshroom-variant-lore:
+- "Menja izgled mooshroom krave"
+button-panda-variant: "&aIzaberi varijantu pande"
+button-panda-variant-lore:
+- "Menja izgled pande"
+button-parrot-variant: "&aIzaberi varijantu papagaja"
+button-parrot-variant-lore:
+- "Menja izgled papagaja"
+button-pig-saddle: "&aMenjaj sedlo svinje"
+button-pig-saddle-lore:
+- "Menja da li svinja"
+- "ima sedlo ili ne"
+button-sheep-color: "&aIzaberi boju ovce"
+button-sheep-color-lore:
+- "Menja boju vune ovce"
+button-sheep-sheared: "&aMenjaj osisanu ovcu"
+button-sheep-sheared-lore:
+- "Menja da li ce"
+- "ovca biti osisana"
+button-villager-profession: "&aIzaberi profesiju seljaka"
+button-villager-profession-lore:
+- "Menja profesiju seljaka"
+button-villager-variant: "&aIzaberi varijantu seljaka"
+button-villager-variant-lore:
+- "Menja izgled seljaka"
+- "&d(zavisi od bioma)"
+button-villager-level: "&aIzaberi boju bedza seljaka"
+button-villager-level-lore:
+- "Menja boju bedza seljaka"
+- "nakon uspesnog trade-a"
+button-zombie-villager-profession: "&aIzaberi profesiju zombi seljaka"
+button-zombie-villager-profession-lore:
+- "Menja profesiju zombi seljaka"
+button-slime-size: "&aIzaberi velicinu slime-a"
+button-slime-size-lore:
+- "Menja velicinu slime-a."
+- "Trenutna velicina: &e{size}"
+button-magma-cube-size: "&aIzaberi velicinu magme"
+button-magma-cube-size-lore:
+- "Menja velicinu magma cube."
+- "Trenutna velicina: &e{size}"
+button-snowman-pumpkin-head: "&aMenjaj bundevu na glavi"
+button-snowman-pumpkin-head-lore:
+- "Menja da li snesko ima"
+- "bundevu na glavi ili ne."
+button-shulker-color: "&aIzaberi boju shulkera"
+button-shulker-color-lore:
+- "Menja boju shulker boxa"
+button-axolotl-variant: "&aIzaberi varijantu axolotla"
+button-axolotl-variant-lore:
+- "Menja skin axolotla"
+button-glow-squid-dark: "&aMenjaj glow"
+button-glow-squid-dark-lore:
+- "Menja da li glow squid"
+- "ima glow ili ne."
+button-goat-screaming: "&aMenjaj vristecu kozu"
+button-goat-screaming-lore:
+- "Menja izmedju normalne"
+- "i vristace koze"
+button-goat-left-horn: "&aMenjaj levi rog"
+button-goat-left-horn-lore:
+- "Menja levi rog koze"
+button-goat-right-horn: "&aMenjaj desni rog"
+button-goat-right-horn-lore:
+- "Menja desni rog koze"
+button-tropical-fish-pattern: "&aIzaberi varijantu"
+button-tropical-fish-pattern-lore:
+- "Menja oblik i skin ribe." 
+- "Trenutno: &e{pattern}"
+button-tropical-fish-body-color: "&aIzaberi boju tela"
+button-tropical-fish-body-color-lore:
+- "Menja boju ribe"
+button-tropical-fish-pattern-color: "&aIzaberi boju sablona ribe"
+button-tropical-fish-pattern-color-lore:
+- "Menja boju sablona"
+- "na ribi"
+button-puffer-fish-puff-state: "&aIzaberi pufferfish stanje"
+button-puffer-fish-puff-state-lore:
+- "Menja da li je"
+- "pufferfish naduvana ili ne."
+- "Trenutno: &e{puffState}"
+button-frog-variant: "&aIzaberi varijantu zabe"
+button-frog-variant-lore:
+- "Menja izgled zabe"
+button-wolf-variant: "&aIzaberi varijantu vuka"
+button-wolf-variant-lore:
+- "Menja izgled vuka"
+
+equipment-editor-title: "Editor Opreme"
+equipment-slot-lore:
+- "Stavi item da je seljak &auzme."
+- "&dDesni klik&r da izbrises"
+- "item iz slota."
+
+equipment-slot-mainhand: "&aGlavna ruka"
+equipment-slot-offhand: "&aDruga ruka"
+equipment-slot-feet: "&aStopala"
+equipment-slot-legs: "&aNoge"
+equipment-slot-chest: "&aTrup"
+equipment-slot-head: "&aGlava"
+equipment-slot-body: "&aTelo"
+
+admin-sign-shop-line1: "&2[PRODAVNICA]"
+admin-sign-shop-line2: "&7{shopName}"
+admin-sign-shop-line3: ""
+admin-sign-shop-line4: "&eDesni klik!"
+
+player-sign-shop-line1: "&2[PRODAVNICA]"
+player-sign-shop-line2: "&7{shopName}"
+player-sign-shop-line3: "&6&l{owner}"
+player-sign-shop-line4: "&eDesni klik!"
+
+for-hire-title: "Za zaposljavanje"
+button-hire: "&aZaposli"
+button-hire-lore:
+- Kupi ovog shopkeepera
+
+trading-title-prefix: "&2"
+trading-title-default: "Shopkeeper"
+
+must-target-block: " &7Moras gledati u blok da postavis shopkeepera."
+missing-spawn-location: " &7Moras da specifikujes tacnu lokaciju za ovu vrstu shopa."
+spawn-block-not-empty: " &7Spawn lokacija mora biti prazna."
+invalid-spawn-block-face: " &7Shopkeeper ne moze biti postavljen na ovu stranu bloka."
+mob-cannot-spawn-on-peaceful-difficulty: " &7Ovakav mob se ne moze stvoriti na peaceful difficulty."
+restricted-area: " &7Ne mozes postaviti shopkeepera u ovom prostoru."
+location-already-in-use: " &7Na ovoj lokaciji se nalazi vec postojeci shopkeeper."
+
+container-selected: " &aKontejner izabran! Pritisni &5desni klik &ana blok koji zelis da postavis shopkeepera."
+unsupported-container: " &7Ovakva vrsta kontejnera ne moze biti izabrana za shop."
+must-select-container: " &7Moras pritisnuti &5desni klik&7 na kontejner pre nego sto postavis shopkeepera."
+must-target-container: " &7Moras ciljati na kontejner pre nego sto postavis ovakvu vrstu shopa."
+invalid-container: " &cIzabrani blok nije validan kontejner!"
+container-too-far-away: " &7Shopkeeperov kontejner je predalek!"
+container-not-placed: " &7Moras da izaberes kontejner koji je skoro postavljen!"
+container-already-in-use: " &7Vec postojeci shopkeeper koristi izabrani kontejner!"
+no-container-access: " &cNemas pristup izabranom kontejneru!"
+too-many-shops: " &cVec si dostigao &llimit&r&c prodavnica kojih mozes da posedujes!"
+no-player-shops-via-command: " &7Prodavnice igraca mogu se kreirati samo putem &eshop creation itema&7!"
+
+type-new-name: " &aUnesite ime prodavnice u chatu\n &a Ukucaj &4&l-&r&a da izbrises trenutno ime."
+name-set: " &aIme prodavnice je uspesno postavljeno na '&e&l{name}&a'!"
+name-has-not-changed: " &aIme prodavnice nije promenjeno."
+name-invalid: " &cNevazece ime prodavnice: '&e{name}&c'"
+nameplate-prefix: "&2"
+
+click-new-shop-location: " &aPritisni &5desni klik&a na novu lokaciju prodavnice.\n &a Pritisni &5levi klik&a da otkazes."
+shopkeeper-moved: " &aShopkeeper je pomeren!"
+shopkeeper-move-aborted: " &7Pomeranje shopkeepera je otkazano."
+
+shop-type-disabled: " &7Vrsta prodavnice '&6{type}&7' je &conemogucena&7."
+shop-object-type-disabled: " &7Vrsta objekta '&6{type}&7' je &conemogucena&7."
+
+must-target-shop: " &7Moras da ciljas u shopkeepera."
+must-target-admin-shop: " &7Moras da ciljas u shopkeepera za admine."
+must-target-player-shop: " &7Moras da ciljas u shopkeepera za igrace."
+target-entity-is-no-shop: " &7Ciljani entity nije shopkeeper."
+target-shop-is-no-admin-shop: " &7Ciljani entity nije shopkeeper za admine."
+target-shop-is-no-player-shop: " &7Ciljani entity nije shopkeeper za igrace."
+unused-container: " &7Ni jedan shopkeeper ne koristi ovaj kontejner."
+not-owner: " &cTi nisi vlasnik ovog shopkeepera."
+owner-set: " &aNovi vlasnik je &6&l{owner}"
+shop-creation-items-given: " &aIgrac &e{player}&a je dobio &e{amount}&5 shop creation item(a)&a!"
+shop-creation-items-received: " &aDobio si &e{amount}&5 shop creation item(a)&a!"
+unknown-currency: " &cNepoznata valuta: '&e{currency}&c'"
+currency-items-given: " &aIgrac &e{player}&a je dobio &6{amount}x&a valute '&e{currency}&a'!"
+currency-items-received: " &aDobio si &6{amount}x&a valute '&e{currency}&a'!"
+must-hold-item-in-main-hand: " &7Moras drzati item u tvojoj glavnoj ruci."
+currency-item-set-to-main-hand-item: " &aValuta '&e{currencyId}&a' je postavljena u &eitem u tvojoj glavnoj ruci&a!"
+items-converted: " &aUspesno pretvoreno &e{count}&a item stek(a)!"
+unknown-book-author: "Nepoznat"
+
+trade-perm-set: " &aTrade permisija za prodavnicu je postavljena na '&e{perm}&a'!"
+trade-perm-removed: " &aTrade permisija '&e{perm}&a' za prodavnicu je uklonjena!"
+trade-perm-view: " &aTrenutna permisija za trade u prodavnici je '&e{perm}&a'."
+
+traded-command-set: " &aKomanda za trade je postavljena na '&e{command}&a'!"
+traded-command-removed: " &aKomanda za trade je uklonjena!"
+traded-command-view: " &aTrenutna komanda za trade je '&e{command}&a'."
+traded-command-view-unset: " &aItem trenutno nema postavljenu komandu za trade."
+
+zombie-villager-curing-disabled: " &7Lecenje zombi seljaka je &conemoguceno&7."
+must-hold-hire-item: " &7Moras da drzis odgovarajuci item za zaposljavanje u tvojoj ruci."
+set-for-hire: " &aOvaj shopkeeper moze biti zaposljen sada."
+hired: " &a&lUspesno si zaposlio ovog shopkeepera!"
+missing-hire-perm: " &cNemas dozvolu da zaposljavas shopkeepere."
+cannot-hire: " &7Nemas dovoljno novca da zaposlis ovog shopkeepera."
+cannot-hire-shop-type: " &cNemas dozvolu da zaposljavas ovu vrstu shopkeepera."
+villager-for-hire: " &aSeljak je ponudio svoje usluge kao shopkeeper u zauzvrat za &6{costs}x {hire-item}&a."
+
+missing-trade-perm: " &cNemas dozvolu za trade sa ovom prodavnicom."
+missing-custom-trade-perm: " &cNemas dozvolu za trade sa ovom prodavnicom."
+cannot-trade-no-offers: " &7Ova prodavnica trenutno &cnema nista u ponudi&7! Proverite kasnije ponovo!"
+no-offers-open-editor-description: " &eMozes editovati ovu prodavnicu tako sto ces pritisnuti &5Desni Klik + SHIFT&e."
+cannot-trade-with-own-shop: " &7Ne mozes se trade sa sopstvenom prodavnicom."
+cannot-trade-while-owner-online: " &7Ne mozes se trade dok je vlasnik ovog shopa ('&6&l{owner}&r&7') online."
+cannot-trade-with-shop-missing-container: " &7Ne mozes se trade sa ovom prodavnicom jer joj fali kontejner."
+cannot-trade-unexpected-trade: " &c&lTrade obustavljen:&7 Itemi ne odgovaraju sa ocekivanjima ovog shopkeepera."
+cannot-trade-items-not-strictly-matching: " &c&lTrade obustavljen:&7 Pruzani itemi ne odgovaraju tacno sa itemima koji se daju."
+cannot-trade-insufficient-storage-space: " &c&lTrade obustavljen:&7 Ova prodavnica nema dovoljno mesta."
+cannot-trade-insufficient-currency: " &c&lTrade obustavljen:&7 Ova prodavnica nema dovoljno valuti."
+cannot-trade-insufficient-stock: " &c&lTrade obustavljen:&7 Ova prodavnica nema dovoljno itema za trade."
+cannot-trade-insufficient-writable-books: " &c&lTrade obustavljen:&7 Ovoj prodavnici knjiga fali praznih knjiga za kopiju."
+
+trade-notification-one-item: "&7Trade: &e{player}&7 [&6{item1Amount}x &a{item1}&7] \u279e [&6{resultItemAmount}x &a{resultItem}&7] {shop}{trade_count}"
+trade-notification-two-items: "&7Trade: &e{player}&7 [&6{item1Amount}x &a{item1}&7] [&6{item2Amount}x &a{item2}&7] \u279e [&6{resultItemAmount}x &a{resultItem}&7] {shop}{trade_count}"
+buy-notification-one-item: "&7Trade: &e{player}&7 [&6{item1Amount}x &a{item1}&7] \u279e [&6{resultItemAmount}x &a{resultItem}&7] {shop}{trade_count}"
+buy-notification-two-items: "&7Trade: &e{player}&7 [&6{item1Amount}x &a{item1}&7] [&6{item2Amount}x &a{item2}&7] \u279e [&6{resultItemAmount}x &a{resultItem}&7] {shop}{trade_count}"
+trade-notification-player-shop: "&e{shop_owner_name}"
+trade-notification-named-player-shop: "&e{shop_owner_name}"
+trade-notification-admin-shop: "&eAdmin Shop"
+trade-notification-named-admin-shop: '&e"{shop_name}"'
+trade-notification-trade-count: "&7(&6{count}x&7)"
+
+owner-trade-notification-one-item: "&e{player}&7 je kupio &6{resultItemAmount}x &a{resultItem}&7 od {shop}{trade_count}"
+owner-trade-notification-two-items: "&e{player}&7 je kupio &6{resultItemAmount}x &a{resultItem}&7 od {shop}{trade_count}"
+owner-buy-notification-one-item: "&e{player}&7 je prodao &6{item1Amount}x &a{item1}&7 {shop}{trade_count}"
+owner-buy-notification-two-items: "&e{player}&7 je prodao &6{item1Amount}x &a{item1}&7 i &6{item2Amount}x &a{item2}&7 {shop}{trade_count}"
+owner-trade-notification-shop: "jednim od tvojih prodavnica"
+owner-trade-notification-named-shop: 'tvojoj prodavnici &e"{shop_name}"'
+owner-buy-notification-shop: "jedne od tvojih prodavnica"
+owner-buy-notification-named-shop: 'tvoje prodavnice &e"{shop_name}"'
+owner-trade-notification-trade-count: "&7(&6{count}x&7)"
+
+disable-trade-notifications-hint: " &7 Mozes ugasiti notifikacije za trade komandom &6&l{command}"
+disable-trade-notifications-hint-command: "/shopkeeper notify trades"
+trade-notifications-disabled: " &a Neces vise dobijati notifikacije za trade dok si online."
+trade-notifications-enabled: " &a Ponovo ces dobijati notifikacije za trade."
+
+shopkeeper-created: "&aShopkeeper kreiran: &6{type} &7({description})\n{setupDesc}"
+
+shop-setup-desc-selling: |-
+  &e  Dodaj iteme koje zelis da prodas u kontejneru, zatim
+  &e  pritisni &5desni klik&e na shop dok drzis &5shift&e za
+  &e  modifikovanje cena.
+shop-setup-desc-buying: |-
+  &e  Dodaj iteme koje zelis da budu za prodaju u kontejneru, zatim
+  &e  pritisni &5desni klik&e na shop dok drzis &5shift&e za
+  &e  modifikovanje cena.
+shop-setup-desc-trading: |-
+  &e  Dodaj iteme koje zelis da budu za prodaju u kontejneru, zatim
+  &e  pritisni &5desni klik&e na shop dok drzis &5shift&e za
+  &e  modifikovanje cena.
+shop-setup-desc-book: |-
+  &e  Dodaj napisane i prazne knjige u kontejneru, zatim
+  &e  pritisni &5desni klik&e na shop dok drzis &5shift&e za
+  &e  modifikovanje cena.
+shop-setup-desc-admin-regular: |-
+  &5  Desni klik&e na prodavnicu da modifikujes trade.
+
+trade-setup-desc-header: '&6{shopType}'
+trade-setup-desc-admin-regular:
+- Ima beskonacno raspolaganja.
+- Ubacuje stvari iz tvog inventara.
+- 'Gornji red: &eItemi za prodaju'
+- 'Donji red: &eCene'
+trade-setup-desc-selling:
+- Prodaje iteme igracima.
+- Ubaci iteme da budu za prodaju u kontejneru
+- Levi/Desni klik da podesis kolicinu.
+- 'Gornji red: &eItemi koji se prodaju'
+- 'Donji red: &eCene'
+trade-setup-desc-buying:
+- Kupuje iteme od igraca.
+- Ubaci iteme koje zelis da budu
+- otkupljeni i nekoliko valuta
+- u kontejner.
+- Levi/Desni klik da podesis kolicinu.
+- 'Gornji red: &eCene'
+- 'Donji red: &eItemi koji se kupuju'
+trade-setup-desc-trading:
+- Trade-uje iteme sa igracima.
+- Izaberi item iz inventara
+- i klikni na neki slot da ga postavis.
+- Levi/Desni klik da podesis kolicinu.
+- 'Gornji red: &eIzabrani itemi'
+- 'Donji red: &eCene'
+trade-setup-desc-book:
+- Prodaje kopiju knjiga.
+- Ubaci napisane i prazne knjige
+- u kontejner.
+- Levi/Desni klik da podesis kolicinu.
+- 'Gornji red: &eKnjige koje se prodaju'
+- 'Donji red: &eCene'
+
+selling-shop.empty-trade.result-item: "&dProdaj Item"
+selling-shop.empty-trade.result-item-lore:
+- "Item koji zelis da prodas."
+- "Dodaje iteme u kontejner."
+- "Levi/Desni klik da podesis kolicinu."
+selling-shop.empty-trade.item1: "&dKupi Item"
+selling-shop.empty-trade.item1-lore:
+- "Item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+selling-shop.empty-trade.item2: "&dKupi Item 2"
+selling-shop.empty-trade.item2-lore:
+- "Drugi item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+selling-shop.empty-item1: "&dKupi Item"
+selling-shop.empty-item1-lore:
+- "Item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+selling-shop.empty-item2: "&dKupi Item 2"
+selling-shop.empty-item2-lore:
+- "Drugi item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+
+buying-shop.empty-trade.result-item: "&dProdaj Item"
+buying-shop.empty-trade.result-item-lore:
+- "Item koji zelis da prodas."
+- "Levi/Desni klik da podesis kolicinu."
+buying-shop.empty-trade.item1: "&dKupi Item"
+buying-shop.empty-trade.item1-lore:
+- "Item koji zelis da kupis."
+- "Dodaje item u kontejner."
+- "Levi/Desni klik da podesis kolicinu."
+buying-shop.empty-result-item: "&dProdaj Item"
+buying-shop.empty-result-item-lore:
+- "Item koji zelis da prodas."
+- "Levi/Desni klik da podesis kolicinu."
+
+trading-shop.empty-trade.result-item: "&dProdaj Item"
+trading-shop.empty-trade.result-item-lore:
+- "Item koji zelis da prodas."
+- "Dodaj item u kontejner shopa,"
+- "ili postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+trading-shop.empty-trade.item1: "&dKupi Item"
+trading-shop.empty-trade.item1-lore:
+- "Item koji zelis da kupi."
+- "Postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+trading-shop.empty-trade.item2: "&dKupi Item 2"
+trading-shop.empty-trade.item2-lore:
+- "Drugi item koji zelis da kupi."
+- "Postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+trading-shop.empty-result-item: "&dProdaj Item"
+trading-shop.empty-result-item-lore:
+- "Item koji zelis da prodas."
+- "Postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+trading-shop.empty-item1: "&dKupi Item"
+trading-shop.empty-item1-lore:
+- "Item koji zelis da kupis."
+- "Postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+trading-shop.empty-item2: "&dKupi Item 2"
+trading-shop.empty-item2-lore:
+- "Drugi item koji zelis da kupis."
+- "Postavi item iz tvog inventara."
+- "Levi/Desni klik da podesis kolicinu."
+
+book-shop.empty-trade.result-item: "&dProdaj Item"
+book-shop.empty-trade.result-item-lore:
+- "Item koji zelis da prodas."
+- "Add written books to the shop container."
+book-shop.empty-trade.item1: "&dKupi Item"
+book-shop.empty-trade.item1-lore:
+- "Item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+book-shop.empty-trade.item2: "&dKupi Item 2"
+book-shop.empty-trade.item2-lore:
+- "Drugi item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+book-shop.empty-item1: "&dKupi Item"
+book-shop.empty-item1-lore:
+- "Item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+book-shop.empty-item2: "&dKupi Item 2"
+book-shop.empty-item2-lore:
+- "Drugi item koji zelis da kupis."
+- "Levi/Desni klik da podesis kolicinu."
+
+missing-edit-villagers-perm: " &cNemas dozvolu da editujes seljake."
+missing-edit-wandering-traders-perm: " &c Nemas dozvolu da editujes wandering tradere."
+must-target-entity: " &7Moras da ciljas na entity."
+must-target-villager: " &7Moras da ciljas na seljaka."
+target-entity-is-no-villager: " &7Ciljani entity nije seljak."
+villager-no-longer-exists: " &7Seljak vise ne postoji."
+
+villager-editor-title: "&2Editor Seljaka: &e{villagerName}"
+villager-editor-description-header: "&6Villager Editor"
+villager-editor-description:
+- 'Gornji red: &eItemi'
+- 'Donji red: &eCene'
+- 'Editovani trade-i imaju beskonacno'
+- 'koriscenja i nemaju XP rewards.'
+
+button-delete-villager: "&4&lIzbrisi"
+button-delete-villager-lore:
+- Brise seljaka
+button-name-villager: "&aPostavi ime seljaku"
+button-name-villager-lore:
+- "Menja ime seljaka"
+button-villager-inventory: "&aOtvori inventar seljaka"
+button-villager-inventory-lore:
+- Dozvoljava ti da pogledas
+- kopiju inventara seljaka
+button-mob-ai: "&aMenjaj mobov AI"
+button-mob-ai-lore:
+- "Menja mobov AI"
+button-invulnerability: "&aMenjaj neranjivost"
+button-invulnerability-lore:
+- "Menja neranjivost moba."
+- "&eIgraci u Creative modu"
+- "&emogu i dalje naneti stete mobu."
+
+villager-inventory-title: "Inventar seljaka (kopija)"
+set-villager-xp: "&aPostavi XP seljaka u &e{xp}"
+no-villager-trades-changed: " &a Ni jedan trade nije promenjen"
+villager-trades-changed: "  &e{changedTrades}&a trade-a su promenjena.
+
+type-new-villager-name: " &aUnesite ime seljaka u chatu\n &a Ukucaj &4&l-&r&a da izbrises trenutno ime."
+villager-name-set: " &aIme seljaka je postavljeno!"
+villager-name-invalid: " &cTo ime nije validno!"
+
+no-shops-found: " &7Ni jedan shop nije pronadjen."
+
+list-admin-shops-header: "&9Trenutno ima &e{shopsCount} &9admin shopova: &e(Strana {page} &7/&e {maxPage})"
+list-all-shops-header: "&9Trenutno ima &e{shopsCount} &9shopova ukupno: &e(Strana {page} &7/&e {maxPage})"
+list-player-shops-header: "&9Igrac '&6&l{player}&r&9' ima &e{shopsCount} &9shopova: &e(Strana {page} &7/&e {maxPage})"
+list-shops-entry: "  &e{shopId}) &7{shopName}&r&8na &7({location})&8, tip: &7{shopType}&8, objekt: &7{objectType}"
+
+shop-removed: " &aShopkeeper je uspesno &cuklonjen&a!"
+shop-already-removed: " &7Shopkeeper je vec uklonjen."
+shop-no-longer-exists: " &7Shopkeeper ne postoji vise."
+shop-removal-cancelled: " &4Greska u pluginu. Uklanjanje shopa nije uspelo."
+
+shops-already-removed: "  &e{shopsCount}&a shopova su uklonjena."
+shop-removals-cancelled: "  &4Greska u pluginu. Uklanjanje &c{shopsCount}&4 shopova nije uspelo."
+admin-shops-removed: "  &e{shopsCount} &aadmin shopova je uklonjeno."
+shops-of-player-removed: "  &e{shopsCount} &ashopova igraca '&6&l{player}&r&a' su uklonjena."
+player-shops-removed: "  &e{shopsCount} &ashopova za igrace su uklonjena."
+
+confirm-remove-shop: " &5Upravo ces neopozivo da uklonis ovog shopkeepera! &4&l[NASTAVI SA OPREZOM]"
+confirm-remove-all-admin-shops: " &5Upravo ces neopozivo da uklonis sve Admin shopove &7(&6{shopsCount}&7)&5! &4&l[NASTAVI SA OPREZOM]"
+confirm-remove-all-own-shops: " &5Upravo ces neopozivo da uklonis sve svoje shopove &7(&6{shopsCount}&7)&5! &4&l[NASTAVI SA OPREZOM]"
+confirm-remove-all-shops-of-player: " &5Upravo ces neopozivo da uklonis sve shopove igraca &6&l{player}&r &7(&6{shopsCount}&7)&5! &4&l[NASTAVI SA OPREZOM]"
+confirm-remove-all-player-shops: " &5Upravo ces neopozivo da uklonis sve shopove svih igraca &5(&6{shopsCount}&7)&5! &4&l[NASTAVI SA OPREZOM]"
+
+confirm-replace-all-shops-with-vanilla-villagers: |-
+  &cUpravo ces neopozivo da obrises sve shopove (&6{shopsCount}&c) i zameniti ih sa vanilla seljacima bez AI!
+  Sacuvaj backup tvog sveta i podacima shopkeepera pa nastavi.
+all-shops-replaced-with-vanilla-villagers: |-
+  &e{adminShopsCount}&a admin shopova i &e{playerShopsCount}&a shopova za igrace su &auspesno zamenjeni &a&lVANILLA&r&a seljacima!
+  &e{skippedShopsCount}&a prodavnica je preskoceno.
+
+confirmation-required: " &7Molimo potvrdi ovu akciju tako sto ces napisati &6/shopkeepers confirm"
+confirmation-expired: " &cZao nam je, potvrda je istekla."
+nothing-to-confirm: " &cTrenutno nema nista sto treba da se potvrdi."
+
+confirmation-ui-delete-shop-title: "&cZaista izbrisati ovu prodavnicu?"
+confirmation-ui-delete-shop-confirm-lore:
+- "Ova akcija je &4&lneopoziva!"
+
+confirmation-ui-delete-villager-title: "&cZaista izbrisati ovog seljaka?"
+confirmation-ui-delete-villager-confirm-lore:
+- "Ova akcija je &4&lneopoziva!"
+villager-removed: " &aSeljak je uklonjen!"
+
+confirmation-ui-confirm: "&2Potvrdi"
+confirmation-ui-cancel: "&4Otkazi"
+confirmation-ui-cancel-lore:
+- "Ovo ce otkazati trenutnu akciju."
+confirmation-ui-aborted: " &7Potvrda je otkazana."
+
+snapshot-list-header: "&9Prodavnica &e{shop_id} &9ima &e{snapshotsCount} &9snapshotova: &e(Strana {page} &7/&e {maxPage})"
+snapshot-list-entry: "  &e{id}) &2{name}&8 (&7{timestamp}&8)"
+invalid-snapshot-id: " &cNepoznat snapshot id: &e{argument}"
+invalid-snapshot-name: " &cNi jedan snapshot nije pronadjen sa imenom '&e{argument}&c'."
+snapshot-name-too-long: " &cIme snapshota moze imati max &e{maxLength}&c karaktera: &e{name}"
+snapshot-name-invalid: " &cNepoznato snapshot ime: &e{name}"
+snapshot-name-already-exists: " &cVec jedan snapshot postoji sa ovakvim imenom: &e{name}"
+snapshot-created: " &aNovi snapshot napravljen: &e({id}) &2{name} &8(&7{timestamp}&8)"
+confirm-remove-snapshot: " &5Upravo ces neopozivo da obrises specificni snapshot! &4&l[NASTAVI SA OPREZOM]"
+confirm-remove-all-snapshots: " &5Upravo ces neopozivo da obrises sve snapshotove ovog shopkeepera &7(&6{snapshotsCount}&7)&5! &4&l[NASTAVI SA OPREZOM]"
+action-aborted-snapshots-changed: " &cAkcija obustavljena! Snapshotovi su se promenili u medjuvremenu. Pokusaj ponovo."
+snapshot-removed: " &aSnapshot obrisan: &e({id}) &2{name} &8(&7{timestamp}&8)"
+snapshot-removed-all: " &aSvih &e{snapshotsCount} &asnapshotova prodavnice &e{shop_id}&a su obrisana."
+snapshot-restore-failed: " &cPovratak snapshota nije uspeo: &e({id}) &2{name} &8(&7{timestamp}&8)"
+snapshot-restored: " &aSnapshot vracen: &e({id}) &2{name} &8(&7{timestamp}&8)"
+
+no-permission: " &cNemas dozvolu za ovu komandu."
+
+command-unknown: " &cNepoznata komanda '&e{command}&c'!"
+command-argument-unexpected: " &cNeocekivan argument '&e{argument}&c'."
+command-argument-requires-player: " &cArgument '&e{argumentFormat}&c' zahteva igrac da pokrene komandu."
+command-argument-missing: " &cNedostaje argument '&e{argumentFormat}&c'."
+command-argument-invalid: " &cNepoznat argument '&e{argument}&c'."
+command-player-argument-missing: " &cNi jedan igrac nije specifikovan za argument '&e{argumentFormat}&c'."
+command-player-argument-invalid: " &cNo player found for '&e{argument}&c'."
+command-shop-type-argument-invalid: " &cNepoznata vrsta prodavnice '&e{argument}&c'."
+command-shop-object-type-argument-invalid: " &cNepoznata vrsta objekta '&e{argument}&c'."
+command-shopkeeper-argument-invalid: " &cNi jedan shopkeeper nije pronadjen za '&e{argument}&c'."
+command-shopkeeper-argument-no-admin-shop: " &cShopkeeper '&e{argument}&c' nije admin shopkeeper."
+command-shopkeeper-argument-no-player-shop: " &cShopkeeper '&e{argument}&c' nije shopkeeper za igrace."
+command-entity-argument-no-villager: " &cEntitet '&e{argument}&c' nije regularan seljak."
+
+ambiguous-player-name: " &cNekoliko podudarnosti je pronadjeno za ime '&e{name}&c'!"
+ambiguous-player-name-entry: "&c  - '&e{name}&r&c' (&6{uuid}&c)"
+ambiguous-player-name-more: "&c  - ...."
+
+command-help-title: "&9***** &8[&6Shopkeepers v{version}&8] &9*****"
+command-help-usage-format: "&e{usage}"
+command-help-description-format: "&8 - &3{description}"
+
+command-description-shopkeeper: "Napravi shopkeepera."
+command-description-help: "Pokazuje stranicu pomoci."
+command-description-reload: "Ucitava plugin ponovo."
+command-description-debug: "Iskljucuje/ukljucuje debug mod."
+command-description-notify: "Ukljucuje ili iskljucuje notifikacije za trade."
+command-description-list: "Pokazuje listu svih admin shopova ili prodavnica igraca."
+command-description-remove: "Uklanja specifican shop."
+command-description-remove-all: "Uklanja prodavnicu specificnog igraca, svih igraca, ili svih admin shopova."
+command-description-give: "Daje item(e) za kreaciju prodavnice specificnom igracu."
+command-description-give-currency: "Daje valutne stavke specificnom igracu."
+command-description-set-currency: "Menja valutu u item koji se drzi u ruci."
+command-description-convert-items: "Pretvara item koji se drzi (ili svih) itema za potvrdu u Spigot-ov data format."
+command-description-remote: "Otvara shop na daljinu (Opcionalno: za drugog igraca)."
+command-description-remote-edit: "Edituje shop na daljinu."
+command-description-transfer: "Prebacuje vlasnistvo prodavnice"
+command-description-settradeperm: "Postavlja, uklanja (-) ili prikazuje (?) dozvolu za trade."
+command-description-settradedcommand: "Postavlja, uklanja (-) ili prikazuje (?) komandu za trade izabranog itema."
+command-description-setforhire: "Postavlja jednu od prodavnice na prodaju."
+command-description-snapshot-list: "Prikazuje listu snapshotova prodavnica."
+command-description-snapshot-create: "Pravi novi snapshot prodavnice."
+command-description-snapshot-remove: "Uklanja specifican ili sve snapshotove prodavnica."
+command-description-snapshot-restore: "Vraca snapshot prodavnice."
+command-description-edit-villager: "Otvara editor za ciljanog seljaka."
+command-description-replace-all-with-vanilla-villagers: "Replaces all shopkeepers with vanilla villagers without AI."
